@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { AppLoading } from 'expo-app-loading';
+import AppLoading from 'expo-app-loading';
 import { useFonts } from 'expo-font';
 import StartGameScreen from './screens/StartGameScreen';
 import GameScreen from './screens/GameScreen';
@@ -14,7 +14,7 @@ export default function App() {
   const [guessRounds, setGuessRounds] = useState(0);
 
   const [fontsLoaded] = useFonts({ 
-    'open-sans': require('./assets/fonts/OpenSans-Reqular.ttf'),
+    'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
     'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
   });
 
